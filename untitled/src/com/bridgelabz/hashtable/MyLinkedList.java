@@ -1,11 +1,11 @@
 package com.bridgelabz.hashtable;
 
 
-    public class NewLinkList<K extends Comparable> {
+    public class MyLinkedList<K extends Comparable> {
         public INode<K> head;
         public INode<K> tail;
 
-        public NewLinkList() {
+        public MyLinkedList() {
             this.head = null;
             this.tail = null;
         }

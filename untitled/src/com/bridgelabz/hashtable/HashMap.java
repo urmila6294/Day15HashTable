@@ -1,11 +1,10 @@
 package com.bridgelabz.hashtable;
 import java.util.ArrayList;
-
 public class HashMap<K extends Comparable, V> {
-    NewLinkList<K> linkList;
+    MyLinkedList<K> linkList;
 
     public HashMap() {
-        this.linkList = new NewLinkList<>();
+        this.linkList = new MyLinkedList<>();
     }
 
     public V get(K key) {
@@ -29,3 +28,5 @@ public class HashMap<K extends Comparable, V> {
     }
 
 }
+
+
