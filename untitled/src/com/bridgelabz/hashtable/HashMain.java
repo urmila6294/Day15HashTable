@@ -1,10 +1,10 @@
 package com.bridgelabz.hashtable;
 
 public class HashMain {
+
     public static void main(String[] args) {
         System.out.println("Welcome To Hashtable Program");
-        String sentence = "to be or not to be";
-        HashMap<String,Integer> hashMap = new HashMap<>();
+        String sentence = "Paranoid are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations" ;		HashMap<String,Integer> hashMap = new HashMap<>();
         String[] words = sentence.toLowerCase().split(" ");
         for(String word: words) {
             hashMap.get(word);
@@ -15,7 +15,9 @@ public class HashMain {
                 value = value + 1;
             hashMap.add(word,value);
         }
-        int frequency = hashMap.get("to");
         System.out.println(hashMap);
+        int frequency = hashMap.get("paranoid");
+        System.out.println("Frequency of paranoid is :"+frequency);
     }
+
 }
