@@ -21,12 +21,20 @@ public class HashMap<K extends Comparable, V> {
             mapNode.setValue(value);
         }
     }
-
+    public void remove(K key) {
+        MapNode<K,V> mapNode = (MapNode<K,V>) this.linkList.search(key);
+        if(mapNode != null) {
+            this.linkList.delete(mapNode);
+        }
+    }
+    public void printHashMap()
+    {
+        linkList.printMyNodes();
+    }
     @Override
     public String toString() {
         return "HashMapNodes{" + linkList + '}';
     }
 
+
 }
-
-
